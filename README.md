@@ -10,6 +10,6 @@ CMake module for Autodesk Maya. Works on Windows, OSX and Linux.
 - For Windows users: type 'cmake -G "Visual Studio 14 2015 Win64" ../' using your version of Vusial Studio
 - For Linux users: type 'cmake -G "Unix makefiles" ../'
 - For OSX users: type 'cmake -G "Xcode" ../' or 'cmake -G "Unix Makefiles" ../'
-- To get more info read my post at http://romanvolodin.com
+- To get more info read my post on http://romanvolodin.com/blog/posts/cross_platform_cmake/
 
 
