@@ -2,7 +2,7 @@
 
 CMake module for Autodesk Maya. Works on Windows, OSX and Linux.
 
-####Usage:
+###Usage:
  - Download and install CMake from https://cmake.org and check if it works typing "cmake -h" in your terminal
  - Download Autodesk Maya SDK for your version of Maya and place the SDK content in MayaPlugins/SDK/maya20xx folder (the structure of MayaPlugins build environment is attached here)
  - Run a terminal and make ~/MayaPlugins/build folder as a current folder
