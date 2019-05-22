@@ -15,8 +15,3 @@ CMake module for Autodesk Maya. Works on Windows, OSX and Linux.
 - After building the solution (sln) we can compile it with **cmake --build . --config Release**. It is important that the current dir is the **build** one, where the solution files are located.
 - If we want to copy compiled plug-in somewhere (maya plugins folder), we use **cmake --build . --config Release --target Install**. It will copy the built plug-in to a folder, specified with CMAKE_INSTALL_PREFIX (CMakeLists.txt)
 
-.. code-block:: python
- 
- print "ASADSA"
-
-
