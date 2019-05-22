@@ -15,3 +15,10 @@ CMake module for Autodesk Maya. Works on Windows, OSX and Linux.
 - After building the solution (sln) we can compile it with **cmake --build . --config Release**. It is important that the current dir is the **build** one, where the solution files are located.
 - If we want to copy compiled plug-in somewhere (maya plugins folder), we use **cmake --build . --config Release --target Install**. It will copy the built plug-in to a folder, specified with CMAKE_INSTALL_PREFIX (CMakeLists.txt)
 
+
+## Some notes:
+- In Linux source building procedure creates **Makefile**, which we can compile into **.so** file (the actual plug-in), using **make -f Makefile**.
+- Code editors (sublime, vscode etc.) have CMake syntax highlighters, that can be downloaded from app markets.
+- In the root folder of the project should be a **CMakeLists.txt**, which contains rules of building and compiling plugins.
+- We can create extra CMake modules for finding specific **includes** and **libs** (not only Maya SDK but some others). These modules should be named  **Find{NAME}.cmake**, like **FindMaya.cmake**. This module should be included to CMakeLists.txt. 
+- When we build solutions for VS or XCode, when we open them in the editors, we can see **ZERO_CHECK** and **ALL_BUILD** projects. **ZERO_CHECK** - reloads cmake files if we did some changes there. Like if we decided to change a path where compiled plugins will be located, we don't have to rebuild the solution from a terminal. To turn off this project, in CMakeLists.txt we should **set(CMAKE_SUPPRESS_REGENERATION true)**.  **ALL_BUILD** builds all projects in the currently opened solution.
