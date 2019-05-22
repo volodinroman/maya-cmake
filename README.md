@@ -11,6 +11,6 @@ CMake module for Autodesk Maya. Works on Windows, OSX and Linux.
 - For Linux users: type 'cmake -G "Unix makefiles" ../'
 - For OSX users: type 'cmake -G "Xcode" ../' or 'cmake -G "Unix Makefiles" ../'
 
-- After building the solution (sln) we can compile it with 'cmake --build . --config Release'
+- After building the solution (sln) we can compile it with **cmake --build . --config Release**
 
 
